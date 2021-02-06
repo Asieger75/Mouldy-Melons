@@ -1,0 +1,82 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: grey;
+}
+
+.logo{
+    text-align: center;
+    color: rgba(67, 194, 9, 0.836);
+    font-size: 30px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: stretch;  
+}
+a{
+    text-decoration: none;
+}
+
+.active{
+    list-style: none;
+    color: rgb(21, 208, 255);
+    font-size: 28px;
+    display: flex;
+    margin: 24px;
+}
+
+.begin{
+    list-style: none;
+    color: orange;
+    font-size: 28px;
+    display: flex;
+    margin: 20px;
+}
+
+.origin, .meetTeam{
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.origin{
+    margin-bottom: 30px;
+}
+
+.originBody, .meetTeamOpen {
+    text-align: center;
+}
+#welcome, #meetUs{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+h3{
+    font-style: italic;
+}
+
+img{
+    border-radius: 10px;
+    height: 50rem;
+    width: 35rem;
+}
+
+.linkedIn{
+    text-decoration: none;
+}
+
+.alex{
+    border:  rgb(21, 208, 255);
+    border-radius: 3px;
+    border-style: solid;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
