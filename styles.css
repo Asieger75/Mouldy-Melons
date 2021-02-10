@@ -22,6 +22,10 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    -webkit-box-shadow: 10px 13px 15px 0px #FF2434; 
+box-shadow: 10px 13px 15px 0px #FF2434;
+}
 .active{
     list-style: none;
     color: rgb(21, 208, 255);
@@ -70,7 +74,7 @@ img{
     text-decoration: none;
 }
 
-.alex{
+.alex, .profile{
     border:  rgb(21, 208, 255);
     border-radius: 3px;
     border-style: solid;
