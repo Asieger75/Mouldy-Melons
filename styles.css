@@ -5,6 +5,10 @@ body{
 
 header {
     background-color: green;
+    margin: 20px;
+    border: rgba(216, 33, 33, 0.836);
+    border-radius: 3px;
+    border-style: solid;
 }
 
 .logo, .beginNow, h3{
@@ -55,6 +59,8 @@ box-shadow: 10px 13px 15px 0px #FF2434;
     padding: 40px;
     margin-top: 40px;
     background-color: green;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .meetTeam{
     margin-bottom: 40px;
