@@ -102,8 +102,9 @@ img{
     text-decoration: none;
 }
 
-#accordion section a:hover {
-    text-decoration: underline;
+#accordion section:hover {
+    -webkit-box-shadow: 10px 13px 15px 0px #FF2434; 
+    box-shadow: 10px 13px 15px 0px #FF2434;
 }
 #accordion section:target img{
     display: block;
