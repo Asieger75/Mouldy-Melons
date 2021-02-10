@@ -1,16 +1,17 @@
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 14pt;
+    background-color: black;
 }
 
 header {
-    background-color: grey;
+    background-color: green;
 }
 
 .logo{
     text-align: center;
-    color: rgba(67, 194, 9, 0.836);
-    font-size: 30px;
+    color: rgba(216, 33, 33, 0.836);
+    font-size: 50pt;
+    font-family: 'Shadows Into Light', cursive;
 
 }
 ul{
@@ -29,25 +30,30 @@ box-shadow: 10px 13px 15px 0px #FF2434;
 }
 .active{
     list-style: none;
-    color: rgb(21, 208, 255);
-    font-size: 28px;
+    color: rgba(216, 33, 33, 0.836);
+    font-size: 40pt;
     display: flex;
     margin: 24px;
+    font-weight: bolder;
+    font-family: 'Shadows Into Light', cursive
 }
 
 .begin{
     list-style: none;
-    color: orange;
-    font-size: 28px;
+    color: black;
+    font-size: 40pt;
     display: flex;
     margin: 20px;
+    font-family: 'Shadows Into Light', cursive
 }
 
 .origin, .meetTeam{
-    border: black;
+    border: rgba(216, 33, 33, 0.836);
     border-style: solid;
     border-radius: 10px;
     padding: 20px;
+    margin-top: 40px;
+    background-color: green;
 }
 
 .origin{
@@ -63,6 +69,7 @@ box-shadow: 10px 13px 15px 0px #FF2434;
 }
 h3{
     font-style: italic;
+    color: rgba(216, 33, 33, 0.836);
 }
 
 img{
@@ -76,19 +83,23 @@ img{
 }
 
 .profile{
-    border:  rgb(21, 208, 255);
+    border:  rgba(216, 33, 33, 0.836);
     border-radius: 3px;
     border-style: solid;
     padding: 10px;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20pt;
+
 
 }
 
 #accordion section p {
     display: none;
     text-align: center;
+    font-size: 15pt;
 }
 
 #accordion section img { 
