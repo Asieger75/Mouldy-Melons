@@ -7,7 +7,7 @@ header {
     background-color: green;
 }
 
-.logo, .beginNow{
+.logo, .beginNow, h3{
     text-align: center;
     color: rgba(216, 33, 33, 0.836);
     font-size: 50pt;
@@ -51,13 +51,15 @@ box-shadow: 10px 13px 15px 0px #FF2434;
     border: rgba(216, 33, 33, 0.836);
     border-style: solid;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     margin-top: 40px;
     background-color: green;
 }
-
-.origin{
-    margin-bottom: 30px;
+.meetTeam{
+    margin-bottom: 40px;
+}
+.originBody{
+    font-size: 18pt;
 }
 
 .originBody, .meetTeamOpen {
