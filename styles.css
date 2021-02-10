@@ -22,7 +22,7 @@ a{
     text-decoration: none;
 }
 
-a:hover {
+a:hover, #hover:hover {
     -webkit-box-shadow: 10px 13px 15px 0px #FF2434; 
 box-shadow: 10px 13px 15px 0px #FF2434;
 }
@@ -74,7 +74,7 @@ img{
     text-decoration: none;
 }
 
-.alex, .profile{
+.profile{
     border:  rgb(21, 208, 255);
     border-radius: 3px;
     border-style: solid;
@@ -83,4 +83,33 @@ img{
     align-items: center;
     margin: 20px;
 
+}
+
+#accordion section p {
+    display: none;
+    text-align: center;
+}
+
+#accordion section img { 
+    display: none;
+    align-items: center;
+    margin-left: 30%;
+}
+
+#accordion section a {
+    text-align:center;
+    color:black;
+    text-decoration: none;
+}
+
+#accordion section a:hover {
+    text-decoration: underline;
+}
+#accordion section:target img{
+    display: block;
+    align-items: center;
+}
+#accordion section:target p {
+    display: block;
+    text-align: center;
 }
