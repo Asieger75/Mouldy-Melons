@@ -7,7 +7,7 @@ header {
     background-color: green;
 }
 
-.logo{
+.logo, .beginNow{
     text-align: center;
     color: rgba(216, 33, 33, 0.836);
     font-size: 50pt;
