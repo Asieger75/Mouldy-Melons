@@ -6,7 +6,17 @@
     <title>Moldy Melons</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=styles.css>
+
+    <!-- CODE FOR WATERMELON ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- END CODE FOR WATERMELON ICON -->
 </head>
 <body>
     <header>
@@ -18,78 +28,112 @@
                 <ul>
                     <!-- working links direct you to corresponding part of page -->
                     <li><a href="movies.html" class="active">Movies</a></li>
-                    <li><a href="books.html" class="active">Books</a></li>
-                    <li><a href="games.html" class="active">Games</a></li>
                     <!-- login and sign up  -->
-                    <li><a href="join.html" class="begin">Login</a></li>
-                    <li><a href="join.html" class="begin">Sign Up</a></li>
+                    <li><a href="login.html" class="begin" target="_blank" >Login</a></li>
+                    <li><a href="signup.html" class="begin" target="_blank" >Sign Up</a></li>
                 </ul>
         </nav>
 </header>
     <div class="origin">
             <h1 class="originBody" id="welcome">Welcome to Moldy Melons</h1>
-                <h2 class="originBody">Moldy Melons: Where the people can speak!</h2>
-                <h3 class="originBody">"Why are we a thing?"</h3>
-                    <p class="originBody">I don't know about you, but the team over at MM is sick and tired of letting critics make or break a movie, game, or book.
+                <h2 class="originBody" id="welcome">Moldy Melons: Where the people can speak!</h2>
+                <h3>"Why are we a thing?"</h3>
+                    <p class="originBody">I don't know about you, but the team over at MM is sick and tired of letting critics make or break a movie.
                     After all, critics are people like you and me. But with that being said, who's to say that
                     a critic's voice has more power than the average joes out there? Not anymore, thanks to Moldy Melons!
-                    Now, by joining our page, you can give honest reviews that other people like you can see before investing in that given movie, book, or game.
+                    Now, by joining our page, you can give honest reviews that other people like you can see before investing in that given movie.
                     </p>
 
-                <p class="originBody">So... What the heck are you waiting for? <a href="join.html" class="beginNow">Sign up now!</a></p>
+                <p class="originBody">So... What the heck are you waiting for? 
+                    <br>
+                    <a href="signup.html" target="_blank" class="beginNow">Sign up now!</a></p>
     </div>
 
     <div class="meetTeam">
-        <h1 class="meetTeamOpen" id="meetUs">Meet The Team!</h1>
+            <h1 class="meetTeamOpen" id="meetUs">Meet The Team!</h1>
             <!-- "About Us" section -->
-            <div class="aboutUs">
                     <div class="profile">
-                            <h2>Andree Matthews</h2>
-                            <p class="bio"></p>
-                            <!-- insert image here -->
+                        <main id="accordion">
+                            <section id="item1">
+                                <a href="#item1"><h1>Alex Koch</h1></a>
+                                <img src="imgs/alex.jpg" class="alexPic">
+                                <p>
+                                    I am a full-stack developer.
+                                           <br>
+                                    Strengths: Communication, ambition, love for my two dogs.
+                                           <br>
+                                    Weaknesses: Kryptonite, nutella, Chick Fil A. 
+                                           <br>
+                                </p>
+                            </section>
+                        </main>    
+                    </div>
+
+                <div class="profile">
+                        <main id="accordion">
+                            <section id="item2">
+                                <a href="#item2"><h1>Mia Dixon</h1></a>
+                                <img src="imgs/mia.jpg" class="miaPic">
+                                <p>
+                                    Strengths: Sleeping, Binge-watching and eating
+                                    <br>
+                                    weakness: Potatoes, Chick Fil A and snow    
+                                </p>
+                                <p>
+                                    ohh and im a caregiver
+                                </p>
+                            </section>
+                        </main>          
+                </div>
+
+                <div class="profile">
+                    <main id="accordion">
+                        <section id="item3">
+                            <a href="#item3"><h1>William Woodall</h1></a>
                             
-                    </div>
+                            
+                            <!-- <img src="imgs/alex.jpg" class="alexPic">
+                            <p>
+                                I am a full-stack developer.
+                                       <br>
+                                Strengths: Communication, ambition, love for my two dogs.
+                                       <br>
+                                Weaknesses: Kryptonite, nutella, Chick Fil A. 
+                                       <br>
+                            </p> -->
 
-                    <div class="profile">
-                            <h2>Mia Dixon</h2>
-                            <p class="bio"></p>
-                            <!-- insert image here -->
-                            <p class="contact"></p>
-                    </div> 
-                    
-                    <div class="profile">
-                            <h2>William Woodall</h2>
-                            <p class="bio"></p>
+                        </section>
+                    </main> 
+                </div>
 
-                           <!-- insert image here -->
-                           <p class="contact"></p>
-                    </div>
-
-                    <div class="alex">
-                        <h2>Alex Koch</h2>
-                       <!-- insert image here -->
-                        <img src="imgs/alex.jpg" class="alexPic">
-
-                        <p class="bio">
+            <div class="profile">
+                <main id="accordion">
+                    <section id="item4">
+                        <a href="#item4"><h1>Andree Baker</h1></a>
+                        
+                        
+                        <!-- <img src="imgs/alex.jpg" class="alexPic">
+                        <p>
                             I am a full-stack developer.
                                    <br>
                             Strengths: Communication, ambition, love for my two dogs.
                                    <br>
                             Weaknesses: Kryptonite, nutella, Chick Fil A. 
                                    <br>
-                            See below for Contact Info
-                               </p>
+                        </p> -->
 
-                                <p>Phone: (704)-654-2465</p>
-                                <a href="https://www.linkedin.com/in/alex-koch-309641184/" 
-                                    class="linkedIn" target="_blank"><p>LinkedIn</p></a>
-                                <a href="https://github.com/MastaKoch" target="_blank" class="endLink"><p>GitHub</p></a>   
-                                <a href="#" class="endLink"><p>Email: alexkoch1996@gmail.com</p></a>   
-                                <a href="https://drive.google.com/file/d/1wQAu-9Yyec85mKjLjmmSgHeHiVdl5QhU/view?usp=sharing" class="endLink" target="_blank"><p>Resume</p></a>
-    
-                        
-                </div>
-            </div> 
+                    </section>
+                </main>   
+            </div>
+
+            <div class="profile">
+                <main id="accordion">
+                    <section id="item5">
+                        <a href="#item5"><h1>Collapse All</h1></a>
+                    </section>
+                </main>
+            </div>   
+        </div> 
     </div>
 </body>
 </html>
