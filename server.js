@@ -1,5 +1,6 @@
 
 require("dotenv").config();
+
 //we need to load handlebars (take burgers for boilerplate) , need to install, npm i express-handlebars
 
 const express = require("express");
@@ -10,8 +11,6 @@ const passport = require("./config/passport");
 // =============================================================
 const app = express();
 const PORT = process.env.PORT || 8080;
-
-
 
 // Requiring our models for syncing
 
@@ -40,8 +39,8 @@ app.use(passport.session());
 require("./routes/user-api-routes.js")(app);
 require("./routes/reviews-api-routes.js")(app);
 require("./routes/movies-api-routes.js")(app);
-require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 
 // Syncing our sequelize models and then starting our Express app

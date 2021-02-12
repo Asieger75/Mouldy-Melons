@@ -16,14 +16,14 @@ module.exports = function(sequelize, DataTypes) {
     },
 
     synopsis: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     
-    category: {
+    categories: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
