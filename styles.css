@@ -1,13 +1,13 @@
 body{
-    font-family: 'Lato', sans-serif;
-    background-color: black;
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: red;
 }
 
 header {
-    background-color: green;
+    background-color: white;
     margin: 20px;
-    border: rgba(216, 33, 33, 0.836);
-    border-radius: 3px;
+    border: rgba(226, 179, 179, 0.836);
+    border-radius: 30px;
     border-style: solid;
 }
 
@@ -15,7 +15,7 @@ header {
     text-align: center;
     color: rgba(216, 33, 33, 0.836);
     font-size: 50pt;
-    font-family: 'Shadows Into Light', cursive;
+    font-family:'Hammersmith One', sans-serif;
 
 }
 
@@ -30,9 +30,10 @@ a{
 }
 
 a:hover, #hover:hover {
-    -webkit-box-shadow: 10px 13px 15px 0px #FF2434; 
-box-shadow: 10px 13px 15px 0px #FF2434;
+    -webkit-box-shadow: -6px 14px 16px 3px rgba(79,255,156,0.72); 
+box-shadow: -6px 14px 16px 3px rgba(79,255,156,0.72);
 }
+
 .active{
     list-style: none;
     color: rgba(216, 33, 33, 0.836);
@@ -40,7 +41,7 @@ box-shadow: 10px 13px 15px 0px #FF2434;
     display: flex;
     margin: 24px;
     font-weight: bolder;
-    font-family: 'Shadows Into Light', cursive
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 .begin{
@@ -49,16 +50,16 @@ box-shadow: 10px 13px 15px 0px #FF2434;
     font-size: 40pt;
     display: flex;
     margin: 20px;
-    font-family: 'Shadows Into Light', cursive
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 .origin, .meetTeam{
     border: rgba(216, 33, 33, 0.836);
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 40px;
     margin-top: 40px;
-    background-color: green;
+    background-color: white;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -73,7 +74,7 @@ box-shadow: 10px 13px 15px 0px #FF2434;
     text-align: center;
 }
 #welcome, #meetUs{
-    font-family:'Shadows Into Light', cursive;
+    font-family: 'Hammersmith One', sans-serif;
     font-size: 40pt;
     font-weight: bolder;
 }
@@ -94,13 +95,13 @@ img{
 
 .profile{
     border:  rgba(216, 33, 33, 0.836);
-    border-radius: 3px;
+    border-radius: 30px;
     border-style: solid;
     padding: 10px;
     justify-content: center;
     align-items: center;
     margin: 20px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Hammersmith One', sans-serif;
     font-size: 20pt;
 
 
@@ -125,9 +126,10 @@ img{
 }
 
 #accordion section:hover {
-    -webkit-box-shadow: 10px 13px 15px 0px #FF2434; 
-    box-shadow: 10px 13px 15px 0px #FF2434;
+    -webkit-box-shadow: -6px 14px 16px 3px rgba(79,255,156,0.72); 
+box-shadow: -6px 14px 16px 3px rgba(79,255,156,0.72);
 }
+
 #accordion section:target img{
     display: block;
     align-items: center;
