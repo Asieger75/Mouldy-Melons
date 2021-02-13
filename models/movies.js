@@ -33,16 +33,13 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Movies.associate = function(models) {
-    // We're saying that a movies entry belongs to a user
-    // A moviese entry can't be created without a review due to the foreign key constraint
-    Movies.belongsTo(models.Reviews, {
-      foreignKey: {
-        allowNull: false
-      }
+    // We're saying that a review should belong to a movie
+    // A review can't be created without a movie due to the foreign key constraint
+    Movies.hasMany(models.Reviews, {
+      // foreignKey: {
+      //   allowNull: false
+      // }
     });
   };
-
-
-
   return Movies;
 };
