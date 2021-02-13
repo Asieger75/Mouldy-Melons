@@ -35,16 +35,15 @@ module.exports = function(sequelize, DataTypes) {
   };
 //add for movies
 
-Reviews.associate = function(models) {
-  // We're saying that a review should belong to a movie
-  // A review can't be created without a movie due to the foreign key constraint
-
-  Reviews.belongsTo(models.Movies, {
-    foreignKey: {
-      allowNull: false
-    }
-  });
-};
+// Reviews.associate = function(models) {
+//   // We're saying that a review should belong to a movie
+//   // A review can't be created without a movie due to the foreign key constraint
+//   Reviews.belongsTo(models.Movies, {
+//     foreignKey: {
+//       allowNull: false
+//     }
+//   });
+// };
 
   return Reviews;
 };

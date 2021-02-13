@@ -1,4 +1,3 @@
-
 require("dotenv").config();
 
 //we need to load handlebars (take burgers for boilerplate) , need to install, npm i express-handlebars
@@ -26,7 +25,23 @@ app.use(express.static("public"));
 //setup handlebars 
 const exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({ 
+  defaultLayout: "main",
+  helpers: {
+  renderHorrorMovies: (movies)=>{
+    return movies.filter(movie=>movie.categories === "horror")
+  } ,
+  renderActionMovies: (movies)=>{
+    return movies.filter(movie=>movie.categories === "action")
+  } ,
+  renderComedyMovies: (movies)=>{
+    return movies.filter(movie=>movie.categories === "comedy")
+  } ,
+  renderScifiMovies: (movies)=>{
+    return movies.filter(movie=>movie.categories === "scifi")
+  } 
+  }
+}));
 app.set("view engine", "handlebars");
 
 // We need to use sessions to keep track of our user's login status
@@ -36,7 +51,7 @@ app.use(passport.session());
 
 // Routes
 // =============================================================
-require("./routes/user-api-routes.js")(app);
+// require("./routes/user-api-routes.js")(app);
 require("./routes/reviews-api-routes.js")(app);
 require("./routes/movies-api-routes.js")(app);
 require("./routes/api-routes.js")(app);

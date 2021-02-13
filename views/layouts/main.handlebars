@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=styles.css>
+    <link rel="stylesheet" href=css/styles.css>
 
     <!-- CODE FOR WATERMELON ICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- END CODE FOR WATERMELON ICON -->
 </head>
@@ -27,10 +27,15 @@
                 <!-- menu -->
                 <ul>
                     <!-- working links direct you to corresponding part of page -->
-                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="/home" class="active">Movies</a></li>
                     <!-- login and sign up  -->
+                    {{#if user.email}}
+                    <li><a href="reviews.html" class="begin" target="_blank" >Reviews</a></li>
+                    <li><a href="logout.html" class="begin" target="_blank" >Log Out</a></li>
+                    {{else}}
                     <li><a href="login.html" class="begin" target="_blank" >Login</a></li>
                     <li><a href="signup.html" class="begin" target="_blank" >Sign Up</a></li>
+                    {{/if}}
                 </ul>
         </nav>
 </header>
