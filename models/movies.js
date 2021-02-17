@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     ratings:{
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         len: [1]
@@ -30,6 +30,8 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
+  }, {
+    timestamps : false,
   });
 
   Movies.associate = function(models) {
