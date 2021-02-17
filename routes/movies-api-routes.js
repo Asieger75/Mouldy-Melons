@@ -7,43 +7,46 @@ module.exports = function(app) {
 
   // GET route for getting all of the movies
   app.get("/api/movies", function(req, res) {
-    let query = {};
     db.Movies.findAll({
-      where: query,
-      include: [db.Reviews]
-    }).then(function(resultReviews) {
-      res.json(resultReviews);
+      order: [
+        ["title", "ASC"],
+      ]
+    }).then(function(result) {
+      res.json(result);
     });
   });
 
-  // Get route for retrieving a single movie
-  app.get("/api/movies/:id", function(req, res) {
-    db.Reviews.findOne({
+  // GET route for getting movies by category
+  app.get("/api/movies/category/:category", function(req, res) {
+    db.Movies.findAll({
       where: {
-        id: req.params.id
+        categories: req.params.category.toLowerCase(),
       },
-      include: [db.Reviews]
-    }).then(function(resultReviews) {
-      res.json(resultReviews);
+      order: [
+        ["title", "ASC"]
+      ],
+    }).then(function(result) {
+      res.json(result);
     });
   });
 
   // POST route for saving a new movie
-  app.post("/api/movies", function(req, res) {
-    db.Movies.create(req.body).then(function(resultReviews) {
-      res.json(resultReviews);
+  app.post("/api/movies/", function(req, res) {
+    db.Movies.create(req.body).then(function(result) {
+      res.json(result);
     });
   });
 
-  // DELETE route for deleting movies
-  app.delete("/api/movies/:id", function(req, res) {
-    db.Movies.destroy({
+  
+  // Get route for retrieving a single movie
+  app.get("/api/movies/:id", function(req, res) {
+    db.Movies.findOne({
       where: {
         id: req.params.id
-      }
-    }).then(function(resultReviews) {
-      res.json(resultReviews);
+      },
+      include: [db.Reviews]
+    }).then(function(result) {
+      res.json(result);
     });
   });
-
 };
